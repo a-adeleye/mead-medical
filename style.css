@@ -2,10 +2,15 @@
 
 @import "form.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
 }
 
 /* body::before{
@@ -14,18 +19,25 @@
     height: 60px;
 } */
 
+.flexed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   width: 100px;
   height: auto;
 }
 
 .flex-row {
-  width: 95%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
+
 .flex-col-3 {
   flex-basis: 40%;
 }
@@ -54,10 +66,9 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  color: #fff;
-  margin: 0 0 1.5rem;
+  margin: 10px 0 1.5rem;
 }
 
 i {
@@ -70,6 +81,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  padding: 10px;
 }
 
 
@@ -118,30 +130,69 @@ a.btn {
   border-radius: 30px;
 }
 
-
-img {
-  width: 400px;
-  height: 400px;
+.text-left{
+  align-items: flex-start;
 }
 
-.button {
+.hero{
+  background-color: #f3f3f3;
+  min-height: 470px;
+}
+.col-2{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-col-2-left{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col-2 img{
+  width: 50%;
+  height: auto;
+  min-width: 400px;
+}
+
+.hero-button {
   color: #ffffff;
   background-color: #a31519;
-  padding: 12px 50px;
+  padding: 20px 50px;
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 1px;
-  text-transform: uppercase;
   border: 0;
   border-radius: 8px;
-  outline: 0;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.button:hover,
-.button:active,
-.button:focus {
+
+.hero-button-2 {
+  color: #A31519;
+  background-color: #fff;
+  padding: 20px 50px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: 1px solid #A31519;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.hero-button:hover,
+.hero-button-2:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   cursor: pointer;
