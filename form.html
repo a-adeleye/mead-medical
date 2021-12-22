@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Snackables - Week 2</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+      <div class="form-container">
+        <div class="form-featured">
+          <div class="form-circle"></div>
+          <img
+            src="https://cloud.githubusercontent.com/assets/3484527/19622568/9c972d44-987a-11e6-9dcc-93d496ef408f.png"
+            class="form-product"
+          />
+        </div>
+        <div class="form-content">
+          <h2>Reach Out To Us</h2>
+
+          <form>
+            <ul class="form-list">
+              <li class="form-list__row">
+                <label>Name</label>
+                <input type="text" name="" required="" />
+              </li>
+              <li class="form-list__row">
+                <label>Email</label>
+                <input
+                  type="text"
+                  placeholder="example@example.com"
+                  required=""
+                />
+              </li>
+              <li class="form-list__row">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="123-4567-890" required />
+              </li>
+
+              <li class="form-list__row">
+                <label>Please select a subject</label>
+                <select required="">
+                  <option value="">Laboratory</option>
+                  <option value="">Ward</option>
+                  <option value="">Supply</option>
+                </select>
+              </li>
+
+              <li>
+                <button type="submit" class="button">Send</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
