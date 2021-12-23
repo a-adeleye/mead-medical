@@ -1,19 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
-@import "form.css";
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -505,7 +503,7 @@ label {
   padding: 20px 30px;
 }
 
-.form-item{
+.form-item {
   text-align: center;
 }
 
@@ -563,7 +561,7 @@ select {
   cursor: pointer;
 }
 
-.send-button:hover{
+.send-button:hover {
   background: red;
 }
 
@@ -579,8 +577,13 @@ select {
   }
 }
 
-@media only screen and (max-width: 1221px){
+@media only screen and (max-width: 1280px) {
+  .menu {
+    display: none;
+  }
+}
 
+@media only screen and (max-width: 1221px) {
   ul {
     padding-left: 5px;
   }
@@ -590,7 +593,6 @@ select {
     align-items: center;
     gap: 15px;
   }
-
 }
 
 @media only screen and (max-width: 1170px) {
@@ -609,7 +611,7 @@ select {
     transition: ease-in 0.2s;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
   }
 
   ul a {
@@ -648,6 +650,19 @@ select {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  .footer-right,
+  .footer-left {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  ul {
+    top: 15%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .flex-col,
   .who-we-are .flex-col,
@@ -669,21 +684,21 @@ select {
   }
 }
 
-@media only screen and (max-width: 580px) {
-  .footer-right,
-  .footer-left {
-    flex-basis: 100%;
+@media only screen and (max-width: 411px) {
+  * {
+    font-size: 17px;
+  }
+
+  .menu,
+  .menu-close {
+    width: 35px;
+    height: 35px;
+  }
+  ul {
+    top: 13%;
+  }
+
+  .logo {
+    width: 75px;
   }
 }
-
-/* 
-@media only screen and (max-width: 568px){
-  ul{
-    flex-wrap: nowrap;
-  }
-  ul a{
-    display: block;
-    margin: 0 auto;
-    border: 1px solid blue;
-  }
-  } */
