@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,8 +16,8 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="flex-row">
-      <header>
+    <header>
+      <div class="flex-row">
         <img class="logo" src="mead-logo.webp" alt="" />
         <nav>
           <ul>
@@ -41,151 +42,148 @@
             <input type="submit" value="Search" />
           </form>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <!-- Hero -->
-<section class="hero flexed">
-
-    <div class="flex-row">
-      <div class="hero-col-2-left">
-        <h1>
-          The leading provider of emergency and diagnostic medical solutions in
-          the UAE.
-        </h1>
-        <div>
-          <button class="hero-button">Browse Products</button>
-        <button class="hero-button-2">Get a Quote</button>
+    <section class="hero flexed">
+      <div class="flex-row">
+        <div class="hero-col-2-left">
+          <h1>
+            The leading provider of emergency and diagnostic medical solutions
+            in the UAE.
+          </h1>
+          <div>
+            <button class="hero-button">Browse Products</button>
+            <button class="hero-button-2">Get a Quote</button>
+          </div>
         </div>
-        
-      </div>
 
-      <div class="col-2">
-        <img class="" src="stethoscope.png" />
+        <div class="hero-col-2-right">
+          <div class="hero-col-2-right-image-holder">
+            <img class="" src="microscope.jpeg" />
+            <img class="" src="light.jpeg" />
+          </div>
+          <div class="hero-col-2-right-image-holder">
+            <img class="" src="stethoscope3.jpeg" />
+            <img class="" src="cruches.jpeg" />
+          </div>
+          <div class="hero-col-2-right-image-holder">
+            <img class="" src="stethoscope.webp" />
+            <img class="" src="wheelchair.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="flex-col">
+        <h2>Our Products</h2>
+        <p>
+          We provide emergency, diagnostic and critical care medical solutions
+          for the hospital and pre-hospital markets in the United Arab Emirates
+        </p>
+      </div>
+      <div class="flex-row">
+        <div class="card">
+          <img src="emergency.png" />
+          <p class="card-text">Emergency</p>
+        </div>
+
+        <div class="card">
+          <img src="critical-care.png" />
+          <p class="card-text">Critical care</p>
+        </div>
+
+        <div class="card">
+          <img src="diagnostics.png" />
+          <p class="card-text">Diagnostic</p>
+        </div>
+
+        <div class="card">
+          <img src="consumables.png" />
+          <p class="card-text">Consumables</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="who-we-are">
+      <div class="flex-col text-center">
+        <h2>Who we are</h2>
+        <p>
+          As an experienced industry leader in the field of medical devices,
+          we're used to working with all types of customers - local or global,
+          large or small. Exceptional quality is the foundation of our company,
+          and is the driving force behind all decisions; whether it's which
+          equipment to provide or the best way to serve our customers.
+        </p>
+        <p>
+          Our high-quality solutions are suitable for all areas of the market,
+          ranging from hospitals and ambulances, to the military and air rescue
+          operations. Whether its ventilation, resuscitation, anesthesia,
+          patient handling or even infusion therapy, MEAD Medical will provide
+          you with the solution that best fits your needs.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer-left">
+        <div class="flex-col">
+          <h3>Quick Links</h3>
+          <div class="footer-row">
+            <div class="footer-col">
+              <p>Home</p>
+              <p>Our Products</p>
+              <p>About Us</p>
+              <p>Contact Us</p>
+            </div>
+            <div class="footer-col">
+              <p>Emergency</p>
+              <p>Critical Care</p>
+              <p>Diagnostics</p>
+              <p>Consumables</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <form class="footer-form">
+              <label for="footer-from">
+              </label>
+              <input type="search" placeholder="search..." />
+              <input type="submit" value="Search" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="flex-col">
+          <h3>Find us on Social Media</h3>
+          <div class="footer-row">
+            <div class="footer-col">
+              <p><i class="fab fa-linkedin linkedin"></i>Meadmedical</p>
+              <p><i class="fab fa-google-plus-square google"></i>Meadmedical</p>
+            </div>
+            <div class="footer-col">
+              <p><i class="fab fa-twitter twitter"></i>Meadmedical</p>
+              <p><i class="fab fa-facebook-square facebook"></i>Meadmedical</p>
+            </div>
+          </div>
+          <hr>
+          <p>Tel: +971 4 446 2065 Fax: +971 4 446 2099<br> info@meadmedical.net</p><hr>
+          <p>
+            <span>Dubai Office</span> <br>
+            Business Bay, Empire Heights Tower B Dubai, United Arab
+            Emirates
+          </p>
+          <p>
+            <span>Abu Dhabi </span> <br>Mussafah Sanaya, 15th Street Abu Dhabi, United Arab
+            Emirates
+          </p>
+        </div>
       </div>
     </div>
-  </section>
 
-    <section class="bg-primary text-light p-5">
-      <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 md-md-0">Sign Up For Our News Letter</h3>
-          <div class="input-group bg-dark btn-lg news-input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Email"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
-              Button
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-5">
-      <div class="d container">
-        <div class="d row text-center g-4">
-          <div class="d col-md">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="d col-md">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="d col-md">
-            <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-5">
-      <div class="container">
-        <div class="row align-items-center text-center justify-content-between">
-          <div class="col-md p-5">
-            <h2>Who we are</h2>
-            <p class="lead">
-              As an experienced industry leader in the field of medical devices,
-              we're used to working with all types of customers - local or
-              global, large or small. Exceptional quality is the foundation of
-              our company, and is the driving force behind all decisions;
-              whether it's which equipment to provide or the best way to serve
-              our customers.
-            </p>
-            <p class="lead">
-              Our high-quality solutions are suitable for all areas of the
-              market, ranging from hospitals and ambulances, to the military and
-              air rescue operations. Whether its ventilation, resuscitation,
-              anesthesia, patient handling or even infusion therapy, MEAD
-              Medical will provide you with the solution that best fits your
-              needs.
-            </p>
-            <a href="" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"> Read more </i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-5 bg-dark text-light">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md">
-            <img src="stethoscope.png" alt="" />
-          </div>
-          <div class="col-md p-5">
-            <h2>Learn the fundamentals</h2>
-            <p class="lead">
-              .card-img-top places an image to the top of the card. With
-              .card-text, text can be added to the card. Text within .card-text
-              can also be styled with the standard HTML tags.
-            </p>
-            <p class="lead">
-              .card-img-top places an image to the top of the card. With
-              .card-text, text can be added to the card. Text within .card-text
-              can also be styled with the standard HTML tags.
-            </p>
-            <a href="" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"> Read more </i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-us">
+    <!-- <section class="contact-us">
       <div class="form-container">
         <div class="form-featured">
           <div class="form-circle"></div>
@@ -233,7 +231,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
     <div class="footer"></div>
 
     <script
