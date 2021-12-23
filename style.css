@@ -91,6 +91,8 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 header .flex-row {
@@ -120,35 +122,6 @@ header nav li {
   margin: 0 25px;
 }
 
-.flex-form input[type="submit"] {
-  background: #a31519;
-  border-radius: 30px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.flex-form input[type="submit"]:hover {
-  background: #d73851;
-}
-
-.flex-form {
-  display: -webkit-box;
-  display: flex;
-  width: 300px;
-  border-radius: 30px;
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.flex-form > * {
-  border: 0;
-  padding: 0 0 0 10px;
-  line-height: 40px;
-  font-size: 1rem;
-  border-radius: 0;
-  outline: 0;
-  -webkit-appearance: none;
-  border-radius: 30px;
-}
 
 .text-left {
   align-items: flex-start;
@@ -168,21 +141,22 @@ header nav li {
 }
 
 .hero-col-2-left {
-  flex-basis: 50%;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .hero-col-2-right {
-  flex-basis: 50%;
+  flex-basis: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  max-height: 400px;
   margin-left: 50px;
   gap: 20px;
 }
@@ -192,7 +166,7 @@ header nav li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 100px;
   gap: 20px;
 }
 
@@ -250,10 +224,9 @@ header nav li {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 300px;
-  height: 350px;
-  margin-left: 20px;
-  margin-bottom: 70px;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 12px;
 }
@@ -277,6 +250,7 @@ header nav li {
 .our-partners {
   background-color: #d5fefd;
   background-image: linear-gradient(135deg, #fffcff 74%, #d5fefd 0%);
+  margin-top: -70px;
 }
 
 .our-partners .flex-col {
@@ -286,7 +260,7 @@ header nav li {
 }
 
 .image-row{
-  width: 80%;
+  width: 90%;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -295,7 +269,7 @@ header nav li {
 }
 
 .partner-image{
-  width: 200px;
+  width: 150px;
   height: 100px;
   margin: 0 auto;
   display: flex;
@@ -308,26 +282,58 @@ header nav li {
   width: 100%
 }
 
+.flex-form input[type="submit"] {
+  background: #a31519;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.flex-form input[type="submit"]:hover {
+  background: #d73851;
+}
+
+.flex-form {
+  display: -webkit-box;
+  display: flex;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.flex-form > * {
+  border: 0;
+  padding: 0 0 0 10px;
+  line-height: 40px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  border-radius: 30px;
+}
+
 .footer {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .footer-left {
   background-color: #a31519;
-  width: 60%;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   color: white;
   padding: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-right {
   background-color: black;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  flex-basis: 40%;
   color: white;
   padding: 20px 20px 20px 0;
 }
@@ -346,10 +352,13 @@ header nav li {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .footer-left .footer-row{
-  gap: 300px
+  width: 70%;
+  justify-content: space-around;
+  row-gap: 30px;
 }
 
 .footer-col p{
@@ -541,4 +550,47 @@ textarea {
   .news-input {
     width: 50%;
   }
+}
+
+@media only screen and (max-width: 1112px){
+  .hero-col-2-right{
+    display: none;
+  }
+
+  .hero-col-2-left {
+    flex-basis: 100%;
+  }
+
+  .hero-col-2-left{
+   text-align: center;
+  }
+  .hero-buttons{
+    margin: 0 auto;
+  }
+  
+}
+
+@media only screen and (max-width: 480px){
+  .flex-col, .who-we-are .flex-col, .products .flex-row, .image-row{
+    width: 100%;
+  }
+
+  .products .flex-col {
+    width: 70%;
+  }
+
+  .partner-image{
+    width: 150px;
+    height: 70px;
+  }
+h1{
+  margin-top: 40px;
+}
+
+}
+
+@media only screen and (max-width: 580px){
+.footer-right, .footer-left{
+  flex-basis: 100%;
+}
 }
