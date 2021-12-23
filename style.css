@@ -54,10 +54,19 @@ nav {
 }
 
 a {
-  color: #a31519;
+  color: #A31519;
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.menu, .menu-close{
+  width: 48px;
+  height: 48px;
+  display: none;
+  cursor: pointer;
+}
+
 
 h1 {
   font-size: 2.1rem;
@@ -178,7 +187,7 @@ header nav li {
 
 .hero-button {
   color: #ffffff;
-  background-color: #a31519;
+  background-color: #A31519;
   padding: 20px 50px;
   margin-top: 15px;
   font-size: 1rem;
@@ -191,14 +200,14 @@ header nav li {
 }
 
 .hero-button-2 {
-  color: #a31519;
+  color: #A31519;
   background-color: #fff;
   padding: 20px 50px;
   margin-top: 15px;
   margin-left: 20px;
   font-size: 1rem;
   letter-spacing: 1px;
-  border: 1px solid #a31519;
+  border: 1px solid #A31519;
   border-radius: 8px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.2s;
@@ -283,7 +292,7 @@ header nav li {
 }
 
 .flex-form input[type="submit"] {
-  background: #a31519;
+  background: #A31519;
   border-radius: 30px;
   color: #fff;
   cursor: pointer;
@@ -319,7 +328,7 @@ header nav li {
 }
 
 .footer-left {
-  background-color: #a31519;
+  background-color: #A31519;
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
@@ -443,7 +452,7 @@ select {
 textarea:focus,
 input:focus {
   outline: none;
-  border-color: #a31519;
+  border-color: #A31519;
 }
 
 select {
@@ -552,7 +561,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 1208px){
+@media only screen and (max-width: 1288px){
 
   ul {
     justify-content: center;
@@ -577,6 +586,29 @@ textarea {
 
 @media only screen and (max-width: 1138px){
 
+ .flex-form{
+    display: none;
+  }
+
+  ul{
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    background: #A31519;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: ease-in 0.2s;
+  }
+
+a{
+  color: white;
+}
+
+.menu{
+  display: block;
+}
+
   .hero-col-2-right{
     display: none;
   }
@@ -593,16 +625,6 @@ textarea {
   }
   
 }
-
-@media only screen and (max-width: 1046px){
-  ul, .flex-form{
-    display: none;
-  }
-.menu{
-  display: block;
-}
-
-  }
 
 @media only screen and (max-width: 480px){
   .flex-col, .who-we-are .flex-col, .products .flex-row, .image-row{
