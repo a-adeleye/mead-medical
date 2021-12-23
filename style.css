@@ -269,9 +269,43 @@ header nav li {
   background-image: linear-gradient(315deg, #fffcff 74%, #d5fefd 0%);
 }
 
-.who-we-are .flex-col {
+.who-we-are .flex-col{
   width: 70%;
   padding: 50px;
+}
+
+.our-partners {
+  background-color: #d5fefd;
+  background-image: linear-gradient(135deg, #fffcff 74%, #d5fefd 0%);
+}
+
+.our-partners .flex-col {
+  width: 90%;
+  padding: 50px;
+  gap: 20px;
+}
+
+.image-row{
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner-image{
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-image img{
+  height: auto;
+  width: 100%
 }
 
 .footer {
